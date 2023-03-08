@@ -16,14 +16,11 @@ body{
 .brand{
     font-size: 30px;
 }
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.navbar {
+  border-bottom: 2px solid #333;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 0;
 }
 .scoreboard{
     max-width: 295px;
@@ -90,14 +87,16 @@ h1 {
   
   /* visibility hidden means the item is still there and taking up space
      but just not shown. display: none doesn't take up space */
-  .hidden {
-    visibility: hidden;
-  }
+ 
   
   .info-bar {
+    visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .show {
+    visibility: visible;
   }
   
   
